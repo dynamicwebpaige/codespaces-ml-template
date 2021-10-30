@@ -9,7 +9,7 @@ RUN conda update conda -c conda-forge && \
     conda env update -f /env_dev.yml -n base && \
     conda clean -afy
 
-FROM nvidia/cuda:${CUDA_VERSION}-base-ubuntu${UBUNTU_VERSION}
+FROM ubuntu${UBUNTU_VERSION}
 
 # Prepare shell and file system
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8 SHELL=/bin/bash
