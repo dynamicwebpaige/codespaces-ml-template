@@ -1,0 +1,9 @@
+sudo
+build-essential
+cmake
+git
+curl
+wget
+unzip
+openssh-server
+nano

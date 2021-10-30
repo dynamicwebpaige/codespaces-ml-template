@@ -1,0 +1,29 @@
+{
+    "name": "Example dev container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "main",
+    "shutdownAction": "none",
+    "workspaceFolder": "/ws",
+    "forwardPorts": [
+        8888
+    ],
+    "extensions": [
+        "eamodio.gitlens",
+        "ms-python.python",
+        "redhat.vscode-yaml",
+    ],
+    "settings": {
+        "python.pythonPath": "/opt/conda/bin/python",
+        "python.formatting.provider": "black",
+        "python.formatting.blackArgs": [
+            "--line-length",
+            "88"
+        ],
+        "python.linting.flake8Enabled": true,
+        "python.linting.flake8Args": [
+            "--max-line-length",
+            "88"
+        ],
+        "python.linting.pylintEnabled": false
+    }
+}
