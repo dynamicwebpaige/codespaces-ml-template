@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook
+# FROM jupyter/datascience-notebook
 
 # We want to run common-debian.sh from here:
 # https://github.com/microsoft/vscode-dev-containers/tree/main/script-library#development-container-scripts
