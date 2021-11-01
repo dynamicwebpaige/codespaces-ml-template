@@ -1,5 +1,6 @@
 {
-    "name": "Example dev container",
+    "name": "Codespaces ML Template",
+    "build": {"dockerfile": "Dockerfile"},
     "dockerComposeFile": "docker-compose.yml",
     "service": "main",
     "shutdownAction": "none",
