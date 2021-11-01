@@ -6,7 +6,11 @@
     "shutdownAction": "none",
     "workspaceFolder": "/ws",
     "forwardPorts": [
-        8888
+        8888: {
+			"label": "Jupyter",
+			"requireLocalPort": true,
+			"onAutoForward": "ignore"
+		}
     ],
     "extensions": [
         "eamodio.gitlens",
@@ -14,6 +18,7 @@
         "redhat.vscode-yaml",
     ],
     "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/bin/python",
         "python.pythonPath": "/opt/conda/bin/python",
         "python.formatting.provider": "black",
         "python.formatting.blackArgs": [
