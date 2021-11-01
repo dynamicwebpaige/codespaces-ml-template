@@ -1,6 +1,9 @@
 {
     "name": "Codespaces ML Template",
-    "build": {"dockerfile": "Dockerfile"},
+    "build": {
+	    "dockerfile": "Dockerfile"
+    },
+    "overridecommand": false,
     "dockerComposeFile": "docker-compose.yml",
     "service": "main",
     "shutdownAction": "none",
