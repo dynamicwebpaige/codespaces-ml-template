@@ -1,4 +1,4 @@
-# FROM jupyter/datascience-notebook
+FROM jupyter/datascience-notebook
 
 # We want to run common-debian.sh from here:
 # https://github.com/microsoft/vscode-dev-containers/tree/main/script-library#development-container-scripts
@@ -12,9 +12,11 @@ RUN apt-get update \
  && bash /tmp/library-scripts/common-debian.sh \
  && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
 
+RUN pip install conda
+
 # ARG UBUNTU_VERSION=20.04
 # ARG CUDA_VERSION=11.0
-FROM continuumio/miniconda3 AS conda
+# FROM continuumio/miniconda3 AS conda
 
 COPY env.yml /
 COPY .devcontainer/env_dev.yml /
