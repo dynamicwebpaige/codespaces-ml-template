@@ -1,0 +1,19 @@
+services:
+  main:
+    image: example_main:${USER}
+    build:
+      dockerfile: .devcontainer/Dockerfile
+      context: ..
+      args:
+        USERNAME: ${USER}
+        UID: ${UID}
+    runtime: nvidia
+    volumes:
+      - #${HOME}/.aws:${HOME}/.aws:ro
+      - #${HOME}/.ssh:${HOME}/.ssh:ro
+      - /opt/dvc/cache:/opt/dvc/cache
+      - ..:/ws
+    environment:
+      - #TOKENIZERS_PARALLELISM=true
+      - #WANDB_CONSOLE=off
+    command: /bin/sh -c "while sleep 1000; do :; done"
