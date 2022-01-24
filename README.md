@@ -2,7 +2,7 @@
 
 This template enables you to use a full-fledged containerized development environment for your machine learning projects - all with VSCode!
 
-The container itself will only take care of running the code, the files/data and your credentials are brought over from and saved to your local workspace, so it all works out of the box.
+The container itself will only take care of running the code, the files/data and your credentials are brought over from and saved to your local workspace, so it all works out of the box. You can also [manage and configure secrets for your Codespaces instances](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-encrypted-secrets-for-your-codespaces).
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ You should have the following installed on the machine where your containers wil
 
 - [docker](https://docs.docker.com/get-docker/)
 - [docker-compose](https://docs.docker.com/compose/install/)
-- [VSCode](https://code.visualstudio.com/docs/setup/setup-overview)
+- [VS Code](https://code.visualstudio.com/docs/setup/setup-overview)
 
 If you plan to use GPU in the containers you will also need:
 
