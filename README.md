@@ -1,4 +1,4 @@
-# VSCode Development Container Template
+# ⚙️ Visual Studio Code: ML DevContainer Template
 
 This template enables you to use a full-fledged containerized development environment for your machine learning projects - all with VSCode!
 
@@ -29,7 +29,7 @@ export UID
 
 This assumes that all your files are on a local machine, where you also want to run the container. If you want to run the container on a remote machine, check out the [remote](#quickstart-remote) section.
 
-All you need to do is to open the repository in VSCode, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and type/select "Reopen in Container".
+All you need to do is to open the repository in VS Code, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and type/select "Reopen in Container".
 
 ## Quickstart: remote
 
@@ -49,7 +49,7 @@ Next, execute this from the root of your repository on the host machine
 docker-compose -f .devcontainer/docker-compose.yml up -d
 ```
 
-You can close the remote terminal after that. Finally, open the repository in VSCode on your local machine, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and type/select "Reopen in Container".
+You can close the remote terminal after that. Finally, open the repository in VS Code on your local machine, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and type/select "Reopen in Container".
 
 This way, everything will work as expected - even the port 8888 of the remote container will be mapped to port 8888 in your local machine.
 
